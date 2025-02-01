@@ -1,6 +1,6 @@
 document.getElementById('login-btn').addEventListener('click',function(event){
     event.preventDefault();
-    const mail = inputValue('login-mail');
+    const mail = inputValue('login-email');
     const pin = inputValue('login-pin');
 
     if(pin === '123'){
