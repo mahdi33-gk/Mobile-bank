@@ -8,6 +8,11 @@ document.getElementById('btn-cashout').addEventListener('click', function(event)
         const displayBalance = accountBalance - cashOutAmmount;
         document.getElementById('bank-balance').innerText = displayBalance;
         document.getElementById('add-cashout-pin').value = '';
+
+        // transaaction
+        const p = document.createElement('p');
+        p.innerText = `Balance decreased ${accountBalance} to ${displayBalance} and cashout ammout ${cashOutAmmount}`;
+        document.getElementById('container').appendChild(p);
     }
     else{
         alert('Sorry! somethings not right.');
