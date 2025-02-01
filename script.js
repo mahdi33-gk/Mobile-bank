@@ -1,7 +1,7 @@
 document.getElementById('login-btn').addEventListener('click',function(event){
     event.preventDefault();
-    const mail = document.getElementById('login-email').value;
-    const pin = document.getElementById('login-pin').value;
+    const mail = inputValue('login-mail');
+    const pin = inputValue('login-pin');
 
     if(pin === '123'){
         window.location.href='/bank.html';
@@ -9,5 +9,6 @@ document.getElementById('login-btn').addEventListener('click',function(event){
     else{
         alert('who are you? Identify yourself.');
     }
+    console.log(mail,pin);
 
 })
