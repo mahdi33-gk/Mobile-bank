@@ -2,65 +2,88 @@
 <html lang="en" data-theme="light">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mobile Bank</title>
-    <!-- tailwind and daisyUI -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.tailwindcss.com"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mobile Bank</title>
+  <!-- tailwind and daisyUI -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
 <body>
-    <main class="flex justify-center">
-        <div class="mockup-phone">
-            <div class="camera"></div>
-            <div class="display">
-                <div class="artboard artboard-demo phone-3">
-                    <!-- Balance start -->
-                    <div class="stats shadow">
-                        <div class="stat">
-                            <div class="stat-title">Available balance</div>
-                            <div id="bank-balance" class="stat-value">89400</div>
-                        </div>
-                    </div>
-                    <!-- balance end -->
-                    <div class="divider"></div>
-                    <!-- actionn btn start -->
-                    <div>
-                        <button class="btn btn-lg">Add money</button>
-                        <button class=" btn btn-lg">Cash out</button>
-                    </div>
-                    <!-- actionn btn end -->
-
-                    <div class="divider"></div>
-                    <!-- add action form start -->
-                    <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
-                        <form class="card-body">
-                          <div class="form-control">
-                            <label class="label">
-                              <span class="label-text">Ammount</span>
-                            </label>
-                            <input type="text" id="add-moneyInput" placeholder="Ammount" class="input input-bordered" required />
-                          </div>
-                          <div class="form-control">
-                            <label class="label">
-                              <span class="label-text">Pin</span>
-                            </label>
-                            <input id="add-pinInput" type="password" placeholder="pin here" class="input input-bordered" required />
-                          </div>
-                          <div class="form-control mt-6">
-                            <button id="add-money" class="btn btn-primary">Add money</button>
-                          </div>
-                        </form>
-                      </div>
-                    <!-- add action form end -->
-                </div>
+  <main class="flex justify-center">
+    <div class="mockup-phone">
+      <div class="camera"></div>
+      <div class="display">
+        <div class="artboard artboard-demo phone-3">
+          <!-- Balance start -->
+          <div class="stats shadow">
+            <div class="stat">
+              <div class="stat-title">Available balance</div>
+              <div id="bank-balance" class="stat-value">89400</div>
             </div>
+          </div>
+          <!-- balance end -->
+          <div class="divider"></div>
+          <!-- actionn btn start -->
+          <div>
+            <button class="btn btn-lg">Add money</button>
+            <button class=" btn btn-lg">Cash out</button>
+          </div>
+          <!-- actionn btn end -->
+
+          <div class="divider"></div>
+          <!-- add action form start -->
+          <div class="hidden card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+            <form class="card-body">
+              <div class="form-control">
+                <label class="label">
+                  <span class="label-text">Ammount</span>
+                </label>
+                <input type="text" id="add-moneyInput" placeholder="Ammount" class="input input-bordered" required />
+              </div>
+              <div class="form-control">
+                <label class="label">
+                  <span class="label-text">Pin</span>
+                </label>
+                <input id="add-pinInput" type="password" placeholder="pin here" class="input input-bordered" required />
+              </div>
+              <div class="form-control mt-6">
+                <button id="add-money" class="btn btn-primary">Add money</button>
+              </div>
+            </form>
+          </div>
+          <!-- add action form end -->
+
+          <!-- cashout form start -->
+          <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+            <form class="card-body">
+              <div class="form-control">
+                <label class="label">
+                  <span class="label-text">Ammount</span>
+                </label>
+                <input type="text" id="add-cashout-Input" placeholder="Ammount" class="input input-bordered" required />
+              </div>
+              <div class="form-control">
+                <label class="label">
+                  <span class="label-text">Pin</span>
+                </label>
+                <input id="add-cashout-pin" type="password" placeholder="pin here" class="input input-bordered" required />
+              </div>
+              <div class="form-control mt-6">
+                <button id="btn-cashout" class="btn btn-primary">Cash out</button>
+              </div>
+            </form>
+          </div>
+          <!-- cashout form end -->
         </div>
-    </main>
-    <script src="/script.js"></script>
-    <script src="/shared.js"></script>
-    <script src="/bank.js"></script>
+      </div>
+    </div>
+  </main>
+  <script src="/script.js"></script>
+  <script src="/shared.js"></script>
+  <script src="/bank.js"></script>
+  <script src="/cashout.js"></script>
 </body>
 
 </html>
