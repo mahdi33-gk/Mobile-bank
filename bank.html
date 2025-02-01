@@ -27,14 +27,15 @@
           <div class="divider"></div>
           <!-- actionn btn start -->
           <div>
-            <button class="btn btn-lg">Add money</button>
-            <button class=" btn btn-lg">Cash out</button>
+            <button id="addMoney-btn" class="btn btn-lg">Add money</button>
+            <button id="cashOut-btn" class=" btn btn-lg">Cash out</button>
+            <button id="history-btn" class=" btn btn-lg">History</button>
           </div>
           <!-- actionn btn end -->
 
           <div class="divider"></div>
           <!-- add action form start -->
-          <div class="hidden card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+          <div id="addmoney-form" class="hidden card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
             <form class="card-body">
               <div class="form-control">
                 <label class="label">
@@ -56,7 +57,7 @@
           <!-- add action form end -->
 
           <!-- cashout form start -->
-          <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+          <div id="cashout-form" class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
             <form class="card-body">
               <div class="form-control">
                 <label class="label">
@@ -76,6 +77,12 @@
             </form>
           </div>
           <!-- cashout form end -->
+
+          <!-- history form start -->
+           <div id="transiction-form">
+            <h1 class="text-4xl">History</h1>
+           </div>
+          <!-- history form end -->
         </div>
       </div>
     </div>
@@ -84,6 +91,7 @@
   <script src="/shared.js"></script>
   <script src="/bank.js"></script>
   <script src="/cashout.js"></script>
+  <script src="/history.js"></script>
 </body>
 
 </html>

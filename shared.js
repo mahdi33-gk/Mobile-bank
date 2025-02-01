@@ -9,3 +9,11 @@ function getInnerText(id){
     const innerTextToNumber = parseFloat(innerrText);
     return innerTextToNumber;
 }
+
+function showSection(id){
+    document.getElementById('addmoney-form').classList.add('hidden');
+    document.getElementById('cashout-form').classList.add('hidden');
+    document.getElementById('transiction-form').classList.add('hidden');
+
+    document.getElementById(id).classList.remove('hidden');
+}
