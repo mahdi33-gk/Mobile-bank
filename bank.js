@@ -10,7 +10,7 @@ document.getElementById('add-money').addEventListener('click', function(event){
     if(bankPin === 123){
         const newBalance = balance + bankAddInputAmmount;
         document.getElementById('bank-balance').innerText = newBalance;
-        document.getElementById('add-pinInput').value = '';
+        document.getElementById('add-pinInput').value = '' ;
     }
     else{
         alert ('incorrect.')
